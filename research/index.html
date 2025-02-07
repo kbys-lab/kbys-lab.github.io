@@ -333,9 +333,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-positive-orthant" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 半正定値錐と positive orthant の関係
+      4. 半正定値錐と 非負象限 の関係
     </span>
   </a>
   
@@ -608,9 +608,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-positive-orthant" class="md-nav__link">
+  <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 半正定値錐と positive orthant の関係
+      4. 半正定値錐と 非負象限 の関係
     </span>
   </a>
   
@@ -690,7 +690,7 @@
 &amp; x_1, x_2, \dots, x_n \ge 0.
 \end{aligned}
 \]</div>
-<p>ここで、変数は実数値のベクトル <span class="arithmatex">\( x \in \mathbb{R}^n \)</span> で、制約のひとつとして「<strong>positive orthant（正の直交方向）</strong>」、すなわちすべての成分が非負である集合</p>
+<p>ここで、変数は実数値のベクトル <span class="arithmatex">\( x \in \mathbb{R}^n \)</span> で、制約のひとつとして「<strong>非負象限</strong>」、すなわちすべての成分が非負である集合</p>
 <div class="arithmatex">\[
 \{ x \in \mathbb{R}^n : x_i \ge 0 \text{ for all } i \}
 \]</div>
@@ -734,10 +734,10 @@
 </ul>
 <p>このように、SDPは「変数が行列になっている」以外はLPと同様に「線形」で「凸」であるため、<strong>線形計画問題の一種（より一般的な形）とみなすことができる</strong>のです。</p>
 <hr />
-<h2 id="4-positive-orthant">4. 半正定値錐と positive orthant の関係</h2>
-<p>ここで重要なのは、<strong>positive orthant（正の直交方向）</strong> と <strong>半正定値錐</strong> との関係です。</p>
+<h2 id="4">4. 半正定値錐と 非負象限 の関係</h2>
+<p>ここで重要なのは、<strong>非負象限</strong> と <strong>半正定値錐</strong> との関係です。</p>
 <ul>
-<li><strong>Positive Orthant：</strong><br />
+<li><strong>非負象限</strong><br />
 <span class="arithmatex">\( \mathbb{R}^n \)</span> の場合、すべての成分が非負であるベクトル全体の集合</li>
 </ul>
 <p>[
@@ -756,7 +756,7 @@
 <div class="arithmatex">\[
 X \succeq 0 \quad \Longleftrightarrow \quad x_i \ge 0 \quad (i=1,\dots,n)
 \]</div>
-<p>となります。これは、<strong>positive orthant</strong>と一致します。<br />
+<p>となります。これは、<strong>非負象限</strong>と一致します。<br />
 この事実から、LPはSDPの特殊なケースと見なせることになります。すなわち、<strong>SDPは、変数を一般の対称行列に拡張したLP</strong>であり、対角行列に限定すれば元のLPの形に戻るのです。</p>
 <hr />
 <h2 id="5">5. まとめ</h2>
@@ -767,7 +767,7 @@ X \succeq 0 \quad \Longleftrightarrow \quad x_i \ge 0 \quad (i=1,\dots,n)
 </li>
 <li>
 <p><strong>凸性：</strong><br />
-  「<span class="arithmatex">\( X \succeq 0 \)</span>」という制約は、半正定値錐という凸集合に対する条件であり、LPでの「<span class="arithmatex">\( x \ge 0 \)</span>」という positive orthant への所属条件の拡張です。</p>
+  「<span class="arithmatex">\( X \succeq 0 \)</span>」という制約は、半正定値錐という凸集合に対する条件であり、LPでの「<span class="arithmatex">\( x \ge 0 \)</span>」という 非負象限 への所属条件の拡張です。</p>
 </li>
 <li>
 <p><strong>一般化の関係：</strong><br />
