@@ -1,0 +1,615 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://kbys-lab.github.io/acc/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
+    
+    
+      
+        <title>Acc - 数理最適化研究室，青山学院大学理工学部経営システム工学科</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.a40c8224.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="数理最適化研究室，青山学院大学理工学部経営システム工学科" class="md-header__button md-logo" aria-label="数理最適化研究室，青山学院大学理工学部経営システム工学科" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            数理最適化研究室，青山学院大学理工学部経営システム工学科
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Acc
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="数理最適化研究室，青山学院大学理工学部経営システム工学科" class="md-nav__button md-logo" aria-label="数理最適化研究室，青山学院大学理工学部経営システム工学科" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    数理最適化研究室，青山学院大学理工学部経営システム工学科
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thesis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    卒業研究
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ニューラルネットワークの精度保証とは？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      半正定値計画問題（SDP）とは？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdp_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ニューラルネットワークとSDPの関係
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      研究事例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      なぜこの研究が面白いのか？
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdp_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      半正定値計画問題（SDP）の概要
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdp_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ニューラルネットワークとSDPの関係
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ニューラルネットワークとSDPの関係">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ロバスト性と安全性の保証
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 学習アルゴリズムへの応用
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      具体的な応用例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      今後の展望
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Acc</h1>
+
+<p>ニューラルネットワーク（NN）の精度保証は、現代の機械学習研究において重要なテーマの一つです。特に、半正定値計画問題（SDP）を用いたアプローチは、理論的な確実性と実用性を兼ね備えた方法として注目されています。以下では、この分野の研究について紹介します。</p>
+<h2 id="_1"><strong>ニューラルネットワークの精度保証とは？</strong></h2>
+<p>ニューラルネットワークは多くの応用分野で成功を収めていますが、その出力結果が正確であることを保証することは難しい課題です。特に、安全性や信頼性が重要な分野（例: 自動運転、医療診断）では、モデルの予測がどれだけ信頼できるかを定量的に評価する必要があります。この「精度保証」を行うための方法として、数学的最適化問題である半正定値計画問題（SDP）が利用されています。</p>
+<h2 id="sdp"><strong>半正定値計画問題（SDP）とは？</strong></h2>
+<p>SDPは、線形計画問題を拡張したもので、行列の正定値性という条件を含む最適化問題です。SDPは以下のような形式で表されます：</p>
+<div class="arithmatex">\[
+\text{最小化 } \text{Tr}(CX) \quad \text{制約: } AX = b, \, X \succeq 0
+\]</div>
+<p>ここで、<span class="arithmatex">\(<span class="arithmatex">\(X\)</span>\)</span> は正定値行列、<span class="arithmatex">\(<span class="arithmatex">\(C\)</span>\)</span> と <span class="arithmatex">\(<span class="arithmatex">\(A\)</span>\)</span> は与えられた行列です。この枠組みは、多くの機械学習問題やNNの精度評価に応用可能です。</p>
+<h2 id="sdp_1"><strong>ニューラルネットワークとSDPの関係</strong></h2>
+<ul>
+<li><strong>ロバスト性保証</strong>: NNが入力データに対してどれだけ堅牢かを評価するために、SDPを用いて最悪ケースの誤差を計算します。</li>
+<li><strong>最適化問題としてのアプローチ</strong>: NNのパラメータや出力範囲を数学的に解析し、SDPでその範囲を厳密に求めることができます。</li>
+<li><strong>応用例</strong>: 機械学習分子動力学法では、NNが第一原理計算（DFT）のポテンシャルを再現する際、その精度や安定性をSDPで保証する研究が進められています[2][6][7]。</li>
+</ul>
+<h2 id="_2"><strong>研究事例</strong></h2>
+<ol>
+<li>
+<p><strong>反応拡散モデルへの応用</strong><br />
+   ニューラルネットワークを利用して微分方程式（反応拡散モデル）の解を近似し、その精度保証法を開発する研究があります[6]。これは数値解析と機械学習の融合による新しいアプローチです。</p>
+</li>
+<li>
+<p><strong>自己学習ハイブリッドモンテカルロ法</strong><br />
+   機械学習分子動力学法では、大規模システムでも高い精度を保つために自己学習型手法と組み合わせて使用されます。この方法では、DFTレベルの精度と低コスト計算を両立しています[7]。</p>
+</li>
+</ol>
+<h2 id="_3"><strong>なぜこの研究が面白いのか？</strong></h2>
+<ul>
+<li><strong>理論と実践の融合</strong>: 数学的な理論（SDP）と実際のアプリケーション（NN）が結びつく点が非常に興味深いです。</li>
+<li><strong>幅広い応用可能性</strong>: 医療、安全保障、自動運転など、高信頼性が求められる分野で役立つ技術です。</li>
+<li><strong>挑戦的な課題</strong>: 精度保証には高い数学的知識とプログラミングスキルが必要であり、自身のスキル向上にもつながります。</li>
+</ul>
+<p>このような研究は、数学や機械学習に興味を持つ学生にとって挑戦しがいがあり、将来性豊かなテーマと言えるでしょう。</p>
+<p>Citations:
+<a href="https://www.alibabacloud.com/help/ja/cloud-migration-guide-for-beginners/latest/loss-function">1</a>,
+<a href="https://sites.google.com/view/cmc-seminars/%E6%B0%B8%E4%BA%95-%E4%BD%91%E7%B4%80%E6%B0%8F-%E7%B2%BE%E5%BA%A6%E3%81%8C%E4%BF%9D%E8%A8%BC%E3%81%95%E3%82%8C%E3%81%9F%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E5%88%86%E5%AD%90%E5%8B%95%E5%8A%9B%E5%AD%A6%E3%82%B7%E3%83%9F%E3%83%A5%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E8%87%AA%E5%B7%B1%E5%AD%A6%E7%BF%92%E3%83%8F%E3%82%A4%E3%83%96%E3%83%AA%E3%83%83%E3%83%89%E3%83%A2%E3%83%B3%E3%83%86%E3%82%AB%E3%83%AB%E3%83%AD%E6%B3%95">2</a>,
+<a href="https://qiita.com/AeyeScan/items/301b724d11433eebc205">3</a>,
+<a href="https://ibis.t.u-tokyo.ac.jp/suzuki/lecture/2023/TohokuUniv/">4</a>,%E6%9D%B1%E5%8C%97%E5%A4%A7%E5%AD%A62023.pdf),
+<a href="https://ml4a.github.io/ml4a/jp/how_neural_networks_are_trained/">5</a>,
+<a href="https://projectdb.jst.go.jp/grant/JST-PROJECT-20353003/">6</a>,
+<a href="https://ccse.jaea.go.jp/meeting/CCSE_WS34/PDF/Nagai.pdf">7</a>,
+<a href="https://research-er.jp/projects/view/1126201">8</a>,
+[9](https://cometscome.github.io/DLAP2020/slides/Nagai_SLHMC20200514.pdf</p>
+<p>ニューラルネットワーク（NN）と半正定値計画問題（SDP）は、一見異なる分野のように思われますが、近年の研究ではこれらが密接に結びつき、NNの信頼性や性能を保証するための強力なツールとしてSDPが利用されています。以下ではその関係を詳しく解説します。</p>
+<h2 id="sdp_2"><strong>半正定値計画問題（SDP）の概要</strong></h2>
+<p>半正定値計画問題（SDP）は、線形計画問題を拡張した凸最適化問題です。SDPは以下の形式で記述されます：</p>
+<div class="arithmatex">\[
+\text{最小化 } \text{Tr}(CX) \quad \text{制約: } AX = b, \, X \succeq 0
+\]</div>
+<p>ここで、<span class="arithmatex">\(<span class="arithmatex">\(X\)</span>\)</span> は対称行列であり、半正定値 (<span class="arithmatex">\(<span class="arithmatex">\(X \succeq 0\)</span>\)</span>) という条件を満たします。この問題は、行列の構造を活かして多くの応用に対応可能です[1]。</p>
+<h2 id="sdp_3"><strong>ニューラルネットワークとSDPの関係</strong></h2>
+<p>ニューラルネットワークにおけるSDPの応用は主に以下の2つの側面で注目されています：</p>
+<h3 id="1">1. <strong>ロバスト性と安全性の保証</strong></h3>
+<p>NNは、入力データに対して予測を行いますが、その予測がどれだけ信頼できるかを保証することが重要です。特に、自動運転や医療など高い信頼性が求められる分野では、NNが異常な入力（例：敵対的サンプル）に対して誤った出力をしないことを保証する必要があります。</p>
+<ul>
+<li><strong>SDPによるロバスト性解析</strong>: NNの出力範囲や誤差境界を数学的に解析し、SDPを用いて最悪ケースの挙動を評価します。これにより、NNがどの程度まで入力変動に耐えられるかを定量的に示すことができます[1]。</li>
+</ul>
+<h3 id="2">2. <strong>学習アルゴリズムへの応用</strong></h3>
+<p>NNの学習過程でもSDPが利用されます。特に、以下のような場面で役立ちます：
+- <strong>重み行列の正則化</strong>: NNの重み行列が特定の条件（例えば低ランク条件）を満たすよう制約を加える際、SDPによる凸緩和が有効です。
+- <strong>損失関数の設計</strong>: NNの損失関数に行列ノルムや特異値分解を含む場合、それらをSDP形式で効率的に解くことが可能です[1]。</p>
+<h2 id="_4"><strong>具体的な応用例</strong></h2>
+<ol>
+<li>
+<p><strong>敵対的サンプルへの耐性評価</strong><br />
+   敵対的サンプルとは、意図的に作成された入力データであり、モデルを誤作動させる目的があります。SDPを用いることで、このような入力に対するモデルの耐性を解析し、安全性を保証する方法が研究されています。</p>
+</li>
+<li>
+<p><strong>低ランク近似とスパース性</strong><br />
+   NNの重み行列や特徴量行列に低ランク制約やスパース性制約を課すことで、モデルの効率性や解釈可能性を向上させる手法があります。これらは非凸問題ですが、SDPによる凸緩和で近似的に解くことができます[1]。</p>
+</li>
+<li>
+<p><strong>リアプノフ関数による安定性解析</strong><br />
+   制御理論ではリアプノフ関数を用いてシステムの安定性を示します。同様に、NNモデルにもこの手法を適用し、その挙動が安定していることを数学的に証明する研究があります[1]。</p>
+</li>
+</ol>
+<h2 id="_5"><strong>今後の展望</strong></h2>
+<ul>
+<li>SDPは理論的には非常に強力ですが、大規模なNNへの適用には計算コストが課題となります。そのため、高速化アルゴリズムや疎構造を活かした効率化技術が求められています。</li>
+<li>また、非線形制約や非凸制約への拡張も進められており、多くの応用分野でさらなる発展が期待されています。</li>
+</ul>
+<p>ニューラルネットワークと半正定値計画問題は、それぞれ独自の強みを持ちながら補完し合う関係です。この分野は理論と実践が交差する魅力的な研究領域であり、今後も多くの応用可能性が広がっていくでしょう。</p>
+<p>Citations:
+<a href="https://www.msi.co.jp/solution/nuopt/docs/glossary/articles/SemidefiniteProgrammingProblem.html">1</a>,
+<a href="https://euske.github.io/introdl/lec3/index.html">2</a>,
+<a href="https://www.jstage.jst.go.jp/article/essfr/16/4/16_247/_pdf">3</a>,
+<a href="https://zero2one.jp/learningblog/origin-of-neural-networks/">4</a>,
+<a href="https://tech.preferred.jp/ja/blog/how-to-learn/">5</a>,
+<a href="https://ibisml.org/ibis2018/files/2018/10/booklet.pdf">6</a>,
+<a href="https://www3.jeed.go.jp/tochigi/college/uploads/2024/01/2024seminar.pdf">7</a>,
+[8](https://www.eng.ehime-u.ac.jp/kougaku/student/risyu_tebiki/documents/yomoku_r06.pdf</p>
+<hr />
+<p>Perplexity の Eliot より: pplx.ai/share</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5090c770.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../js/tsp_demo.js"></script>
+      
+    
+  </body>
+</html>
