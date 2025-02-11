@@ -442,6 +442,90 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      敵対的サンプルとは？
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="敵対的サンプルとは？">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成方法の例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      敵対的サンプルの影響
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      耐性評価の具体例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="耐性評価の具体例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-adversarial-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 敵対的学習（Adversarial Training）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 幾何学的防御手法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sdp" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 半正定値計画問題（SDP）による解析
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      まとめ
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -551,6 +635,56 @@
 <a href="https://ibisml.org/ibis2018/files/2018/10/booklet.pdf">6</a>,
 <a href="https://www3.jeed.go.jp/tochigi/college/uploads/2024/01/2024seminar.pdf">7</a>,
 [8](https://www.eng.ehime-u.ac.jp/kougaku/student/risyu_tebiki/documents/yomoku_r06.pdf</p>
+<p>敵対的サンプルへの耐性評価は、ニューラルネットワーク（NN）の安全性や信頼性を確保するための重要な課題です。以下では、敵対的サンプルがどのように生成されるか、その影響、そして耐性評価の具体例について解説します。</p>
+<hr />
+<h2 id="_6"><strong>敵対的サンプルとは？</strong></h2>
+<p>敵対的サンプルは、入力データに微小な摂動（ノイズ）を加えることで生成されます。この摂動は人間にはほとんど認識できませんが、NNに誤った予測をさせることが可能です。例えば、画像分類モデルにおいて「猫」の画像にわずかなノイズを加えると、「犬」と誤認識させることができます[1][3]。</p>
+<h3 id="_7"><strong>生成方法の例</strong></h3>
+<ol>
+<li>
+<p><strong>FGSM（Fast Gradient Sign Method）</strong><br />
+   モデルの損失関数を勾配に基づいて最大化する方向にノイズを加える手法です。この手法は計算が高速で広く使われています[4]。</p>
+</li>
+<li>
+<p><strong>PGD（Projected Gradient Descent）</strong><br />
+   FGSMを複数回繰り返してより強力な敵対的サンプルを生成する手法です[3]。</p>
+</li>
+</ol>
+<hr />
+<h2 id="_8"><strong>敵対的サンプルの影響</strong></h2>
+<ul>
+<li><strong>モデルの脆弱性</strong>: 敵対的サンプルは、AIシステムの信頼性を低下させる要因となります。特に、自動運転や医療診断など高い精度が求められる分野では大きなリスクとなります[1][3]。</li>
+<li><strong>実例</strong>: CIFAR-10データセットで生成された敵対的サンプルでは、元画像とほとんど見分けがつかないにもかかわらず、分類結果が大きく変わることが確認されています[1]。</li>
+</ul>
+<hr />
+<h2 id="_9"><strong>耐性評価の具体例</strong></h2>
+<h3 id="1-adversarial-training"><strong>1. 敵対的学習（Adversarial Training）</strong></h3>
+<ul>
+<li><strong>概要</strong>: 敵対的サンプルを訓練データに含めてモデルを学習させることで、耐性を向上させる手法です。</li>
+<li><strong>具体例</strong>: CIFAR-10データセットでPGDによる敵対的サンプルを生成し、それらを用いてモデルを再訓練します。この方法では、モデルが摂動に対してより堅牢になることが確認されています[3][5]。</li>
+</ul>
+<h3 id="2_1"><strong>2. 幾何学的防御手法</strong></h3>
+<ul>
+<li><strong>概要</strong>: 学習データの多様体構造（データ分布の幾何学的特徴）を利用し、敵対的サンプルによる誤分類を防ぐ方法です。</li>
+<li><strong>具体例</strong>: 入力データから攻撃要因となる多様体の直交成分を除去することで、防御性能を向上させます。この手法は正常データの分類精度を維持しつつ、高い防御性能を発揮します[1][3]。</li>
+</ul>
+<h3 id="3-sdp"><strong>3. 半正定値計画問題（SDP）による解析</strong></h3>
+<ul>
+<li><strong>概要</strong>: NNの出力範囲やロバスト性を数学的に解析するためにSDPを利用します。</li>
+<li><strong>具体例</strong>: 敵対的摂動によって引き起こされる最悪ケースの誤差境界をSDPで計算し、それに基づいてモデルの堅牢性を評価します[2][3]。</li>
+</ul>
+<hr />
+<h2 id="_10"><strong>まとめ</strong></h2>
+<p>敵対的サンプルへの耐性評価は、AIシステムの安全性向上に不可欠な研究領域です。具体例として「敵対的学習」や「幾何学的防御手法」、さらには「半正定値計画問題」を活用した解析が挙げられます。これらの手法はそれぞれ異なるアプローチでNNの脆弱性に対応しており、今後もさらなる改良と応用が期待されています。</p>
+<p>Citations:
+<a href="https://www.ipsj.or.jp/award/9faeag0000004f1r-att/CH-010.pdf">1</a>,
+<a href="https://www.msi.co.jp/solution/nuopt/docs/glossary/articles/SemidefiniteProgrammingProblem.html">2</a>,
+<a href="https://www.sankei-award.jp/sentan/jusyou/2023/04.pdf">3</a>,
+<a href="https://www.brainpad.co.jp/doors/contents/01_tech_2022-08-23-153001/">4</a>,
+<a href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?action=pages_view_main&amp;">5</a>,active_action=repository_action_common_download&amp;item_id=187230&amp;item_no=1&amp;attribute_id=1&amp;file_no=1&amp;page_id=13&amp;block_id=8),
+<a href="https://ai-compass.weeybrid.co.jp/tag/%E5%8D%8A%E6%AD%A3%E5%AE%9A%E5%80%A4%E8%A8%88%E7%94%BB%E5%95%8F%E9%A1%8C/">6</a>,
+<a href="https://www.nri-secure.co.jp/blog/hostile-sample">7</a>,
+[8](https://www.ism.ac.jp/editsec/toukei/pdf/46-2-317.pdf</p>
 <hr />
 <p>Perplexity の Eliot より: pplx.ai/share</p>
 
