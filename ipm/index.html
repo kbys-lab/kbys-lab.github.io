@@ -466,6 +466,168 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      数理最適化アルゴリズムにおける疎性の利用とコーダルグラフ
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数理最適化アルゴリズムにおける疎性の利用とコーダルグラフ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      疎性の利用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      コーダルグラフとその応用
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コーダルグラフとその応用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      コーダルグラフの特性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      具体例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      応用例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      まとめ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      コーダルグラフとは
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      半正定値計画問題とは
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      コーダルグラフと半正定値計画問題の具体的な関係
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="コーダルグラフと半正定値計画問題の具体的な関係">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. スパース性の活用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. グラム行列とコーダルグラフ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 組み合わせ最適化への応用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 階層化アプローチ
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      応用例
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      結論
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -618,6 +780,79 @@
 <a href="https://orsj.org/wp-content/corsj/or55-7/or55_7_393.pdf">6</a>,
 <a href="https://hyoka.ofc.kyushu-u.ac.jp/html/100023035_ja.html">7</a>,
 <a href="https://itpfdoc.hitachi.co.jp/manuals/bds/BS500007-45/BS500007-45_r1.pdf">8</a></p>
+<h2 id="_10">数理最適化アルゴリズムにおける疎性の利用とコーダルグラフ</h2>
+<p>数理最適化において、疎性（sparsity）の概念は、大規模な問題を効率的に解くための重要な要素です。特に、行列やグラフ構造が疎である場合、その特性を活用することで計算効率を大幅に向上させることが可能です。本解説では、疎性の利用とコーダルグラフの応用について説明します。</p>
+<hr />
+<h3 id="_11">疎性の利用</h3>
+<p>疎性とは、行列やグラフにおいて非ゼロ要素が比較的少ない状態を指します。この特性を活かすことで、以下のような利点があります。</p>
+<ul>
+<li><strong>計算コストの削減</strong>: 疎行列では、非ゼロ要素のみを対象に計算することで効率化が可能です[1][3]。</li>
+<li><strong>メモリ使用量の削減</strong>: 非ゼロ要素のみを格納するデータ構造を用いることで、メモリ消費を抑えられます[4]。</li>
+</ul>
+<p>例えば、半正定値計画問題（SDP）においては、多項式最適化問題の緩和手法としてLasserreの階層が知られていますが、その計算規模は変数数の増加とともに急激に拡大します[1]。ここで、疎性を活用することで、問題サイズを縮小し、高速な解法が実現可能です。</p>
+<hr />
+<h3 id="_12">コーダルグラフとその応用</h3>
+<p>コーダルグラフ（Chordal Graph）は、任意の閉路が3つ以下の頂点からなる部分閉路を持つグラフです。この性質は、行列分解や補完問題において特に有用です。</p>
+<h4 id="_13"><strong>コーダルグラフの特性</strong></h4>
+<ul>
+<li><strong>効率的な分解</strong>: コーダルグラフは木分解（tree decomposition）によって分割可能であり、大規模な行列計算を小規模なブロック単位で処理できます[4][6]。</li>
+<li><strong>行列補完</strong>: 半正定値行列補完問題では、コーダル構造を持つ場合に効率的なアルゴリズムが利用可能です[2][7]。</li>
+</ul>
+<h4 id="_14"><strong>具体例</strong></h4>
+<ol>
+<li><strong>最大コーダル部分グラフ</strong>: 任意の疎構造グラフから最大コーダル部分グラフを抽出することで、行列補完や準ニュートン法などへの応用が可能です[4][6]。</li>
+<li><strong>Tree-width制約</strong>: Tree-width制約下でコーダルグラフを探索することで、大規模最適化問題を効率的に解く手法も提案されています[8]。</li>
+</ol>
+<hr />
+<h3 id="_15">応用例</h3>
+<ul>
+<li><strong>半正定値計画問題（SDP）</strong>: Lasserre階層などの多項式最適化手法で、疎性とコーダル構造を活用することで、高次元問題でも実用的な計算時間で解けるようになります[1][2]。</li>
+<li><strong>機械学習との融合</strong>: 疎性やコーダル構造は、機械学習モデルのトレーニングにも応用されており、大規模データセットへの適用が進んでいます[5]。</li>
+</ul>
+<hr />
+<h3 id="_16">まとめ</h3>
+<p>疎性とコーダルグラフは、大規模数理最適化問題の効率的な解法設計において重要な役割を果たします。これらの特性を活かすことで、従来困難だった高次元問題にも対応できるようになり、多くの分野で応用が広がっています。</p>
+<p>Citations:
+<a href="https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1461-1.pdf">1</a>,
+<a href="https://kaken.nii.ac.jp/file/KAKENHI-PROJECT-19K03631/19K03631seika.pdf">2</a>,
+<a href="https://qiita.com/kievdhia/items/3a5cc31f42cfd5464b12">3</a>,
+<a href="http://www-optima.amp.i.kyoto-u.ac.jp/papers/bachelor/2007_bachelor_kurokawa.pdf">4</a>,
+<a href="https://note.com/moai_lab/n/nb28898e99919">5</a>,
+<a href="https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1584-07.pdf">6</a>,
+<a href="https://www.msi.co.jp/solution/nuopt/docs/glossary/articles/SemidefiniteProgrammingProblem.html">7</a>,
+<a href="http://www.ai.lab.uec.ac.jp/wp-content/uploads/2020/02/fbe419ab487263ab57f3db1065125048-1.pdf">8</a></p>
+<hr />
+<p>コーダルグラフ（chordal graph）と半正定値計画問題（SDP: Semidefinite Programming）の関係については、グラフ理論と最適化理論の交差点に位置する重要なテーマです。以下にその具体的な関係を詳しく説明します。</p>
+<h2 id="_17">コーダルグラフとは</h2>
+<p>コーダルグラフは、任意のサイクルが「長さ4以上」であれば必ず「弦」（サイクルを形成する頂点以外の2頂点を結ぶ辺）を持つグラフのことです。この性質により、コーダルグラフは木分解や部分木表現が容易であり、効率的なアルゴリズム設計に利用されます。</p>
+<h2 id="_18">半正定値計画問題とは</h2>
+<p>半正定値計画問題は、次の形式で表される凸最適化問題です：
+$$
+\min_X \ \mathrm{tr}(CX) \quad \text{s.t.} \quad A_i \cdot X = b_i, \ i = 1, \dots, m, \quad X \succeq 0
+$$
+ここで、<span class="arithmatex">\(<span class="arithmatex">\(X\)</span>\)</span> は半正定値行列（対称かつ非負固有値を持つ行列）であり、制約条件として線形等式と半正定値性が課されています[1][2]。</p>
+<h2 id="_19">コーダルグラフと半正定値計画問題の具体的な関係</h2>
+<h3 id="1">1. <strong>スパース性の活用</strong></h3>
+<p>コーダルグラフはスパース行列（多くの要素がゼロである行列）の構造を効率的に表現するために利用されます。特に、半正定値計画問題では変数として扱う行列 <span class="arithmatex">\(<span class="arithmatex">\(X\)</span>\)</span> が大規模になることが多いため、そのスパース性を活用することで計算効率を向上させることが可能です。</p>
+<ul>
+<li>コーダルグラフの木分解を利用すると、大規模な半正定値行列 <span class="arithmatex">\(<span class="arithmatex">\(X\)</span>\)</span> を小さな部分行列（クリークに対応する部分）に分割して扱うことができます。これにより、計算コストが大幅に削減されます。</li>
+</ul>
+<h3 id="2">2. <strong>グラム行列とコーダルグラフ</strong></h3>
+<p>コーダルグラフは、特定の条件下で半正定値行列をグラム行列として分解する際にも役立ちます。例えば、コーダルグラフの隣接行列やその部分構造は、半正定値性を満たすような行列分解（例えば <span class="arithmatex">\(<span class="arithmatex">\(X = LL^T\)</span>\)</span> の形）を容易にします。</p>
+<h3 id="3">3. <strong>組み合わせ最適化への応用</strong></h3>
+<p>組み合わせ最適化問題（例：最大カット問題やカラーリング問題）は、しばしば半正定値計画問題として緩和されます。この際、元の問題に対応するグラフがコーダルグラフである場合、効率的な解法が可能になります。具体的には、コーダルグラフの構造を利用して双対問題や内点法アルゴリズムを簡略化できます[1][2]。</p>
+<h3 id="4">4. <strong>階層化アプローチ</strong></h3>
+<p>半正定値計画問題は、モーメント法やLasserre階層などで多項式最適化問題を近似的に解く際にも利用されます。この場合、基盤となるグラフがコーダルであるとき、その階層構造が解析しやすくなるため、高次元問題への拡張も容易になります。</p>
+<h2 id="_20">応用例</h2>
+<ul>
+<li><strong>電力ネットワーク解析</strong>: 電力系統の最適化では、ネットワーク構造がスパースであることが多く、これをコーダルグラフとしてモデル化することでSDPによる解析が効率化されます。</li>
+<li><strong>機械学習</strong>: グラフィカルモデル（例：ガウス型マルコフランダムフィールド）の推論では、コーダルグラフによる因子分解がSDP緩和に役立ちます。</li>
+</ul>
+<h2 id="_21">結論</h2>
+<p>コーダルグラフは、その特有の構造から半正定値計画問題のスパース性活用や効率的なアルゴリズム設計において重要な役割を果たします。この関係は、大規模最適化や組み合わせ最適化など、多くの応用分野で活かされています。</p>
+<p>Citations:
+<a href="https://ja.wikipedia.org/wiki/%E5%8D%8A%E6%AD%A3%E5%AE%9A%E5%80%A4%E8%A8%88%E7%94%BB%E5%95%8F%E9%A1%8C">1</a>,
+<a href="https://qiita.com/aikit0846/items/4366b8a3a85d63d93c71">2</a></p>
 <hr />
 <p>Perplexity の Eliot より: pplx.ai/share</p>
 
