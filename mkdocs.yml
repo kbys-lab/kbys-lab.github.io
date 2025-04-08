@@ -18,7 +18,8 @@ nav:
     - 教員: members/faculty.md
     - 学生: members/students.md
   - 研究テーマ: research.md
-  - 卒業研究: https://kbys-lab.github.io/thesis/
+  - サプライ・チェイン最適化: scm.md
+  - 卒業研究: thesis/index.md
   - Blog: https://kbys-lab.github.io/blog/
   - Archive: https://kbys-lab.github.io/
 
