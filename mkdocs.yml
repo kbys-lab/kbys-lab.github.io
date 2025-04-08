@@ -1,0 +1,29 @@
+site_name: 数理最適化研究室
+site_description: 青山学院大学理工学部経営システム工学科 数理最適化研究室（小林研究室）
+site_url: https://kbys-lab.github.io/
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+
+nav:
+  - Home: index.md
+  - メンバー:
+    - members/index.md
+    - 教員: members/faculty.md
+    - 学生: members/students.md
+  - 研究テーマ: research.md
+  - 卒業研究: https://kbys-lab.github.io/thesis/
+  - Blog: https://kbys-lab.github.io/blog/
+  - Archive: https://kbys-lab.github.io/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
