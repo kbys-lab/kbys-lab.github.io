@@ -2,38 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://kbys-lab.github.io/</loc>
-         <lastmod>2025-02-11</lastmod>
+         <lastmod>2025-04-08</lastmod>
     </url>
     <url>
-         <loc>https://kbys-lab.github.io/acc/</loc>
-         <lastmod>2025-02-11</lastmod>
+         <loc>https://kbys-lab.github.io/research/</loc>
+         <lastmod>2025-04-08</lastmod>
     </url>
     <url>
-         <loc>https://kbys-lab.github.io/cone/</loc>
-         <lastmod>2025-02-11</lastmod>
+         <loc>https://kbys-lab.github.io/members/</loc>
+         <lastmod>2025-04-08</lastmod>
     </url>
     <url>
-         <loc>https://kbys-lab.github.io/ipm/</loc>
-         <lastmod>2025-02-11</lastmod>
+         <loc>https://kbys-lab.github.io/members/faculty/</loc>
+         <lastmod>2025-04-08</lastmod>
     </url>
     <url>
-         <loc>https://kbys-lab.github.io/member/</loc>
-         <lastmod>2025-02-11</lastmod>
-    </url>
-    <url>
-         <loc>https://kbys-lab.github.io/sdp/</loc>
-         <lastmod>2025-02-11</lastmod>
-    </url>
-    <url>
-         <loc>https://kbys-lab.github.io/sparsity/</loc>
-         <lastmod>2025-02-11</lastmod>
-    </url>
-    <url>
-         <loc>https://kbys-lab.github.io/thesis/</loc>
-         <lastmod>2025-02-11</lastmod>
-    </url>
-    <url>
-         <loc>https://kbys-lab.github.io/blog/</loc>
-         <lastmod>2025-02-11</lastmod>
+         <loc>https://kbys-lab.github.io/members/students/</loc>
+         <lastmod>2025-04-08</lastmod>
     </url>
 </urlset>
